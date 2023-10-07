@@ -22,7 +22,7 @@ public class CustomerController {
     
     @Autowired
     ServiceInterface customerInterface;
-    
+    //create da
     @PostMapping("/create")
     public Customer create(@RequestBody Customer customer) {
         return customerInterface.save(customer);
